@@ -27,3 +27,11 @@
 <br>
 
 <%= link_to 'New Flat', new_flat_path %>
+
+<br>
+
+
+<div style="width: 100%; height: 70vh;"
+     data-controller="mapbox"
+     data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"
+     data-mapbox-markers-value="<%= @markers.to_json %>"></div>
